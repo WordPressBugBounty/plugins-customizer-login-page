@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin Name: Customizer Login Page
  * Description: customizer Login Page For WordPress.
- * Version: 2.0.7
+ * Version: 2.0.8
  * Author: A WP Life
  * Author URI: https://awplife.com/
  * License: GPLv2 or later
@@ -63,7 +63,7 @@ function oldclp_fire_function() {
 
 			protected function _constants() {
 				// Plugin Version
-				define( 'AWP_CLP_VER', '2.0.7' );
+				define( 'AWP_CLP_VER', '2.0.8' );
 
 				// Plugin Text Domain
 				define( 'AWP_CPL_TXTDM', 'customizer-login-page' );
