@@ -1,11 +1,11 @@
 === Login Page Customizer - Customizer Login Page, Admin Page, Custom Design ===
 Contributors: awordpresslife
-Version: 2.0.5
+Version: 2.0.9
 Donate link: https://paypal.me/awplife
 Tags: login page, custom login, wp login, customizer, custom templates
 Requires at least: 4.0
-Tested up to: 6.6.2
-Stable tag: 2.0.8
+Tested up to: 6.8.1
+Stable tag: 2.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -172,6 +172,10 @@ No, the Customizer Login Page does all customization by enhancing WordPress core
 If your website is configured to use merged login with Wordpress.com, In this case, the website uses the WordPress server's login page to get you to log in to your dashboard instead of the website's wp-login.php. also if you try to log in manually by URL i.e. "http://mywebsite.com/wp-login.php" it will redirect you to the WordPress server's login page. To change this behavior you have to "Disable WordPress.com Log In" and along with it "Set a Password for WP-Admin". Settings related to this are present in your WordPress dashboard in Settings>Security>. For a more detailed explanation of how to do that follow this WordPress tutorial: https://wordpress.com/support/wordpress-com-secure-sign-on-sso/ 
 
 == Changelog ==
+
+= 2.0.9 =
+* Additional changes: None
+* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.8.1
 
 = 2.0.8 =
 * Additional changes: None
