@@ -1,11 +1,11 @@
 === Login Page Customizer - Customizer Login Page, Admin Page, Custom Design ===
 Contributors: awordpresslife
-Version: 2.0.9
+Version: 2.1.1
 Donate link: https://paypal.me/awplife
 Tags: login page, custom login, wp login, customizer, custom templates
 Requires at least: 4.0
-Tested up to: 6.8.1
-Stable tag: 2.0.9
+Tested up to: 6.8.2
+Stable tag: 2.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -173,6 +173,13 @@ If your website is configured to use merged login with Wordpress.com, In this ca
 
 == Changelog ==
 
+= 2.1.1 =
+* Additional changes: None
+* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.8.2
+
+= 2.1.0 =
+* Text domain error fixed.
+
 = 2.0.9 =
 * Additional changes: None
 * Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.8.1
@@ -195,160 +202,3 @@ If your website is configured to use merged login with Wordpress.com, In this ca
 
 = 2.0.2 Multisite Compatibility for Latest Rebuild =
 * Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.4.2
-
-= 2.0.1=
-* Additional changes: None
-* Testing plugin for wordpress 6.4.2
-
-= 2.0.0 Latest Rebuild =
-* Latest Core rebuild: Advanced version with many more settings Supporting latest WordPress 6.4.2
-
-= 1.0.32 =
-* Enhancements: checked for WordPress 6.3.2
-
-= 1.0.31 =
-* Enhancements: checked for WordPress 6.3.1
-
-= 1.0.30 =
-* Enhancements: checked for WordPress 6.2.2
-
-= 1.0.29 =
-* Enhancements: checked for WordPress 6.2.1
-
-= 1.0.28 =
-* Bug Fix: Fixed
-
-= 1.0.27 =
-* Enhancements: checked for WordPress 6.0.1
-
-= 1.0.26 =
-* Enhancements: checked for WordPress 5.9.3
-
-= 1.0.25 =
-* Enhancements: checked for WordPress 5.9
-
-= 1.0.24 =
-* Enhancements: checked for WordPress 5.8.1
-
-= 1.0.23 =
-* Enhancements: checked for WordPress 5.7.2
-
-= 1.0.22 =
-* Enhancements: checked for WordPress 5.7.1
-
-= 1.0.21 =
-* Enhancements: checked for WordPress 5.7
-
-= 1.0.20 =
-* Enhancements: checked for WordPress 5.6.2
-
-= 1.0.19 =
-* Enhancements: checked for WordPress 5.5.3
-
-= 1.0.18 =
-* Enhancements: Yes, checked for WordPress 5.5.3
-
-= 1.0.17 =
-* Enhancements: Yes, checked for WordPress 5.5.1
-
-= 1.0.16 =
-* Enhancements: Yes, checked for WordPress 5.5
-* Bug: Miner Issue Fixed.
-
-= 1.0.15 =
-* Enhancements: Yes, checked for WordPress 5.4.2
-* Enhancements: customizer-login-page-de_DE.po and mo language File Added
-
-= 1.0.14 =
-* Enhancements: Yes, checked for WordPress 5.4.2
-* Enhancements: customizer-login-page-de_DE.po language File Added
-
-= 1.0.13 =
-* Enhancements: Yes, checked for WordPress 5.4.1
-
-= 1.0.12 =
-* Enhancements: Yes, checked for WordPress 5.3.2
-
-= 1.0.11 =
-* Enhancements: Yes, checked for WordPress 5.3.2
-
-= 1.0.10 =
-* Enhancements: Yes, checked for WordPress 5.2.3
-
-= 1.0.9 =
-* Enhancements: Yes, checked for WordPress 5.2.3
-
-= 1.0.8 =
-* Enhancements: Yes, Tested for WordPress 5.2.2
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 1.0.7 =
-* Enhancements: Yes, Tested for WordPress 5.2.2
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 1.0.6 =
-* Enhancements: Yes, Tested for WordPress 5.2.2
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 1.0.5 =
-* Enhancements: Yes, Tested for WordPress 5.2.1
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 1.0.4 =
-* Enhancements: Yes, Tested for WordPress 5.2.1
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 1.0.3 =
-* Enhancements: Yes, Tested for WordPress 5.1.1
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 1.0.2 =
-* Enhancements: Yes, Tested for WordPress 5.1.1
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 1.0.1 =
-* Enhancements: Yes, Tested for WordPress 5.0.3
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 1.0.0 =
-* Enhancements: Yes, Tested for WordPress 5.0.3
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 0.0.9 =
-* Enhancements: Yes, Tested for WordPress 5.0.3
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 0.0.8 =
-* Enhancements: Yes, Tested for WordPress 5.0.2
-* Bug Fix: Fixed
-* Additional changes: Bug Fixed
-
-= 0.0.7 =
-* Enhancements: Yes, Tested for WordPress 5.0.2
-* Bug Fix: None
-* Additional changes: Bug Fixed
-
-= 0.0.6 =
-* Enhancements: Yes, Tested for WordPress 5.0.1
-* Bug Fix: None
-* Additional changes: Bug Fixed
-
-= 0.0.4 =
-* Enhancements: Yes, Tested for WordPress 4.9
-* Bug Fix: None
-* Additional changes: Bug Fixed
-
-= 0.0.3 =
-* Enhancements: Yes, Tested for WordPress 4.9
-* Bug Fix: None
-* Additional changes: Yes, Hindi language added

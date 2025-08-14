@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin Name: Customizer Login Page
  * Description: customizer Login Page For WordPress.
- * Version: 2.0.9
+ * Version: 2.1.1
  * Author: A WP Life
  * Author URI: https://awplife.com/
  * License: GPLv2 or later
@@ -63,13 +63,13 @@ function oldclp_fire_function() {
 
 			protected function _constants() {
 				// Plugin Version
-				define( 'AWP_CLP_VER', '2.0.9' );
+				define( 'AWP_CLP_VER', '2.1.1' );
 
 				// Plugin Text Domain
 				define( 'AWP_CPL_TXTDM', 'customizer-login-page' );
 
 				// Plugin Name
-				define( 'AWP_CLP_PLUGIN_NAME', __( 'Customizer Login', AWP_CPL_TXTDM ) );
+				define( 'AWP_CLP_PLUGIN_NAME', 'Customizer Login' );
 
 				// Plugin Slug
 				define( 'AWP_CLP_PLUGIN_SLUG', 'awp_customizer_login' );
