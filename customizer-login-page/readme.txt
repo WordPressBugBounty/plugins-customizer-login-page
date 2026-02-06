@@ -1,204 +1,241 @@
-=== Login Page Customizer - Customizer Login Page, Admin Page, Custom Design ===
-Contributors: awordpresslife
-Version: 2.1.1
+=== Login Page Customizer ===
+Contributors: awordpresslife, razipathhan, hanif0991, muhammadshahid, fkfaisalkhan007, sharikkhan007, zishlife, FARAZFRANK
+Version: 2.1.4
 Donate link: https://paypal.me/awplife
-Tags: login page, custom login, wp login, customizer, custom templates
+Tags: login page customizer, custom login, login design, login form, branding
 Requires at least: 4.0
-Tested up to: 6.8.2
-Stable tag: 2.1.1
+Tested up to: 6.9
+Stable tag: 2.1.4
+Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Customize the login page using WordPress Customizer for both beginners and advanced users, simplifying the creation of an attractive admin login page.
+Customize your WordPress login page with live preview. Change logo, background, colors, forms, and buttons easily using the native Customizer.
 
 == Description ==
 
-== Make the WordPress login page uniquely yours. ==
+Login Page Customizer lets you design a custom WordPress login page using the native WordPress Customizer. All changes appear in real-time, so you can see exactly how your login page will look before saving.
 
-Revamp your WordPress login experience effortlessly with our powerful plugin, Customizer Login Page. Unlock the full potential of WordPress customization by seamlessly integrating with the WordPress Customizer, empowering you to tailor every aspect of your login page to perfection.
+**View Pro Login Page Templates:** **[Customizer Login Page Premium Demo](https://awplife.com/demo/customizer-login-page-premium/)**
+**Learn More About Pro:** **[Customizer Login Page Premium Features](https://awplife.com/wordpress-plugins/customizer-login-page-premium/)**
+**Get Pro:** **[Buy Customizer Login Page Premium](https://awplife.com/account/signup/customizer-login-page-premium)**
 
-With Customizer Login Page, unleash your creativity by personalizing colors, designs, and logos, ensuring your login page resonates with your brand identity. Elevate user engagement with customizable forms and buttons, providing an intuitive and inviting login experience.
+This plugin works directly within the WordPress Customizer interface. You don't need any coding knowledge to use it. Simply navigate to Appearance > Customize, and you'll find all the login page options organized in easy-to-use panels.
 
 https://www.youtube.com/watch?v=leIKM10deIY
 
-Craft a stunning admin login page with ease, thanks to our extensive list of customization options. Witness your changes come to life in real-time within the Customizer, granting you instant visual feedback and effortless editing capabilities. From custom login page logos to background images, form widths, and page styling, the possibilities are endless.
+== What You Can Customize ==
 
-Experience the simplicity of Customizer Login Page, designed to cater to both novice and advanced users alike. Whether you're a beginner exploring customization or a seasoned pro seeking ultimate control, our plugin offers the tools you need to transform your admin login page in minutes.
+**Logo Settings**
 
-Enhance your WordPress login page today with Customizer Login Page—the ultimate solution for unlocking the full potential of WordPress customization while adhering to best practices in plugin search SEO.
+* Upload your own logo image
+* Adjust logo height and width
+* Set custom logo link URL
+* Control logo margins and positioning
 
-== Key Features Latest ReBuild 2.0.0 ==
+**Background Options**
 
-- Change the Login page Title.
-- Update the logo Image and its URL and also Reposition Logo.
-- Change/Add background colors-gradients/Image.
-- Change/Add background Video.
-- Change/Add Outer Form Colors/ background image / Sizing / Reposition/ Shadows and more.
-- Change/Add Inner Form Colors/ background image / Sizing / Reposition/ Shadows and more.
-- Change Form Inputs Colors / Design / Fonts / Labels and more.
-- Change Button Colors / Designs / Fonts and more.
-- Lost Password/ Back to link - Colors / Design / Reposition and more.
-- Change Default Messages and MSG box Styling / Repositioning.
-- Change Default Errors and Error Box Styling / Repositioning.
-- Add/Change Footer Copyright text or custom msg.
-- Export / Import saved modifications.
-- Add custom CSS and JS
-And much more!
+* Set a background image from your media library
+* Choose solid background colors
+* Create gradient backgrounds with custom angles
+* Control image repeat, size, and position
 
-== See Real Time Custom Changes while Customizing == 
+**Login Form Styling**
 
-Customizer Login Page enhances WordPress customizer to customize WordPress admin login page which makes customization more interactive as you can see all changes made to settings reflect directly in front of the user realtime. Reduces time consumed in switching tabs and page refreshes. 
+* Customize outer and inner form dimensions
+* Set form background colors or images
+* Add borders with custom colors and styles
+* Apply shadow effects to forms
+* Reposition forms anywhere on the page
 
-== Predefined Presets == 
+**Input Fields and Labels**
 
-Customizer Login Page includes ready-designed Presets designed by professional designers with keeping modern AI touch in mind which Saves your valuable time and helps to find inspiration with our designer-made Presets templates.
+* Change input field colors and dimensions
+* Customize label text colors and alignment
+* Choose from Google Fonts for label text
+* Modify default label text
 
-== Custom Page Title == 
+**Button Design**
 
-The Plugin's newly introduced setting allows you to change the **Title of admin login page** to match your organization.
+* Set button colors for normal and hover states
+* Adjust button size and padding
+* Add custom border styles
+* Control button alignment and shadows
 
-== Custom LOGO & Custom Logo Link == 
+**Links and Messages**
 
-Customizer Login Page includes various settings related to **LOGO** in the WordPress environment. **Enable/Disable WordPress Logo at login page**. **Replace WordPress default logo** with your organization logo. **Height and Width adjustment** of logo easily with implemented range bars. **Top and bottom margin** adjustability for logo. Set **Custom Link** or **URL for logo** and for more flexibility now **Reposition logo**.
+* Customize "Lost Password" link appearance
+* Style the "Back to" link
+* Modify login, logout, and error messages
+* Design the message and error notification boxes
 
-== Background Image ==
+**Additional Options**
 
-With Customizer Login Page **Change the background image of WordPress Login Page** without any coding specialty or hassle of editing file codes. Choose a background image just by uploading and selecting in WordPress Media Library any number of times. Additionally makes the background more flexible with **Image Repeat**, **Image Size** and **Image Position** adjustable dropdowns and also allows **Enable/Disable background** of the WordPress login Page.
+* Add custom footer text and copyright
+* Insert custom CSS for advanced styling
+* Add custom JavaScript if needed
+* Export and import your settings
 
-== Solid or Gradient Backgrounds == 
+== Predesigned Templates ==
 
-In a professional environment, background colors are the most valuable aspect of representing a trusted environment. To make this more efficient Customizer Login Page includes **Color Pickers** with the choice of **Gradient Colors** along with **Gradient Angle** and for more simplicity choose a **Solid Color** to make it more attractive by changing the WordPress Login Page Background color in your way.
+The plugin includes ready-made presets created by professional designers. These templates help you get started quickly, and you can customize them further to match your brand.
 
-== Video as Background == 
+== Free vs Pro Features ==
 
-Now in a modern age where almost anything is possible, With Customizer **Login Page add Background video** to Wordpress Login Page hassle-free just by uploading and selecting in Wordpress Media Library. Additionally, it includes settings **Video Loop**, **Video Mute**, **Video Sizing** at background and **Repostion Video** as desired.
+**Free Version Includes:**
 
-== Forms Enhanced Customization and Repositioning == 
+* Page title customization
+* Logo upload and basic positioning
+* Background image and solid colors
+* Outer and inner form styling
+* Input field and label customization
+* Button color and size options
+* Link styling (Lost Password, Back to)
+* Message and error box design
+* Footer text customization
+* Custom CSS and JS fields
+* Export/Import settings
+* Basic presets
 
-As Wordpress login page has Various Forms on the login screen based on Logging IN, Recovering Passwords or Registering a New User on Wordpress. With Customizer Login Page **design WordPress login page** form fast and easily implementing all effects at once on all forms with the great approach of similarity which saves and reduces valuable time in designing, adjusting and repositioning of Login Form in WordPress. This is achieved by distributing the application of design in two different parts:-
+**Pro Version Adds:**
 
-- **Outer Form Settings**
-
-Includes most important aspect, change **Height-width** of WordPress Login Form along with settings **Adjustable login form Padding**, **Position Login Form X and Y Axis**, **Border Styling and Colors**, **Login Form Shadow** and **Login Form background image**.All settings are adjustable in a single panel respective to all WordPress Admin page forms.
-
-- **Inner Form Settings**
-
-Includes change Height and width of WordPress inner Login Form which consists of Input Fields and Labels, along with settings **Adjustable login form Padding**, **Position Login Form X and Y Axis**, **Border Styling and Colors**, **Login Form Border**, **Login Form Shadow** and **Login Form background image**.
-
-== Form Inputs ==
-Adjust WordPress Login Page Form Input's **Text Colors**, **Box Colors**, **Box Height/Width**, **Box Paddings**, **Box Margins**, **Password eye Position**.
-
-== Labels with Google Fonts Enhancement == 
-Includes Settings related to **Change fonts** of Labels WordPress Login page with Customizer Login Page choose from dropdown list with **almost all Google Fonts** available today. The adjustability of **Labels Color**, **Change Label Alignments** and **Adjust Label Font Size** in this section of the Customizer Login Page.
-With Customizer Login Page it is also possible to **change Wordpress Login Form default Labels** with your desired text.
-
-== Login Form Button Styling ==
-Using the Customizer login page customize **WordPress Login Form Button** in various aspects by adjusting all settings on a single section like Login Form **Button Color**, **Button Size**, **Button Shadows**, **Button Text & size**, **Button Alignment**, **Button Hover Colors**, **Button Width & Height**, **Button Border Styling** and other more settings available.
-
-== Lost Password Link/Form Customization ==
-
-**Enable/Disable Lost Password Link** of WordPress Login page with Customizer Login page. **Change Lost Password Link Text** with any **desired text**.Adjust **Link Font Size**, **Link Alignment and Colors** along with **change Label** of WordPress **Lost Password Form sizing and alignment**.
-
-== Back to Link Customization ==
-
-Allows to **Enable/Disable Wordpress Login Page Back to Link**, Change Back to link **Alignment**, **Font Size**, **Colors** and **Positioning**. 
-
-== Replace or Modify Errors Texts & Messages Texts ==
-
-When you want to apply more creativity with different **Errors Texts** & **Messages texts** rather than default WordPress ones, the Customizer login page has a bunch of options to allow your creativity to be applied on the WordPress Admin Login Page. Includes modification of messages **Change Login Page Welcome Message**, **Enable/Disable Login Page Welcome Message**. Modify **Logout Message**, **Lost Password form Message** and **Registration Message**. A bunch of **Modification of Error texts** are also available which includes **Username / Password / Email related Errors** with different **Invalids** similar to **Register Form Error Texts** along with **Lost Password for Error Texts**. 
-
-== Styling Error Box & Message Box ==
-
-More creativeness enhancement by applying various design modifications to the representation of errors and messages displayed on WordPress Login, Register and Lost Password Forms. Styling of Message and Error boxes includes various options in each different **Message Box Styling** and **Error Box Styling** sections including custom **Width**,**Text Colors**, **Alignment**, **Font Size**, **Border Settings**, **Paddings**, **Margins**, **Shadows** and **Positioning**.
-
-== Footer Styling with Copyright and Support Text ==
-
-Edit the Wordpress login Page Footer with the Customizer Login Page Plugin with just in click. The footer and Copyright section allows you to **Enable/Disable Login Page Footer**, and Change **Footer Background Color**. Display **Custom Copyright Text** to WordPress **Login Page Footer** with **Colors** and **Sizing** additional settings.
-
-== Custom CSS & JS ==
-
-With a bunch of design and creativity enhancements still, if you feel a lack of any design or feature option. Apply Custom CSS/JS to WordPress Login Page just by pasting it to text boxes within the Custom CSS/JS section using Customizer Login Page. Gives Special power to advance users with additional CSS/JS.
-
-== Export/Import Customizations ==
-
-The export/Import feature saves precious time with applying design combinations to various available options when you flush your database and perform different operations on it. With "Export" all your modifications are saved in a readable "JSON" format which can be easily imported by selecting this file in the "Import Section".
-
-== Secure Trusted & Reliable ==
-
-Customizer Login Page does all customization by enhancing WordPress core's predefined functions and within the range of CSS/JS custom allowance by WordPress Restrictions. Customizer Login Page Plugin never affects any Security or overrides any WordPress restriction. Just gives the flexibility to show real-time changes in the customizer. It's completely safe and reliable to use.
-
-**CHECK CUSTOMIZER LOGIN PAGE PREMIUM PREBUILD TEMPLATES:** [PRESETS DEMO](https://awplife.com/demo/customizer-login-page-premium/)
+* 18+ professionally designed presets
+* Video background support
+* Advanced gradient options with multiple color stops
+* Full Google Fonts library access
+* Advanced shadow controls
+* Form repositioning with X/Y axis control
+* Password field eye icon positioning
+* Priority email support
 
 == Installation ==
 
-Download & install the plugin into your site. After successful installation of the plugin In your WordPress Dashboard, navigate to the plugin menu page ie. "LoginPC". and click the "Start Customizing Login Page" Button.
+= From WordPress Dashboard =
+1. Go to Plugins > Add New
+2. Search for "Login Page Customizer"
+3. Click Install Now, then Activate
 
-= Installation =
-Download the plugin ZIP file.
-Go to WordPress Dashboard -> Plugins -> Add New.
-Click on "Upload Plugin" and browse to select the ZIP file.
-Click "Install Now" and then "Activate" the plugin.
-OR
-Unzip the plugin ZIP file.
-Upload the unzipped folder to the /wp-content/plugins/ directory.
-Go to WordPress Dashboard -> Plugins and click "Activate" next to the Login Page Customizer plugin.
+= Manual Installation =
+1. Download the plugin ZIP file
+2. Go to Plugins > Add New > Upload Plugin
+3. Select the ZIP file and click Install Now
+4. Activate the plugin
 
-== Screenshot ==
+= After Activation =
+1. Go to your WordPress Dashboard
+2. Navigate to the "LoginPC" menu item
+3. Click "Start Customizing Login Page"
+4. Make your changes and click Publish to save
+
+== Screenshots ==
+
+1. Customizer interface with login page preview
+2. Logo settings panel
+3. Background options panel
+4. Form styling options
+5. Button customization panel
 
 == Frequently Asked Questions ==
 
-= How to get started with Customizer Login Page Plugin? =
+= How do I start customizing my login page? =
 
-In your WordPress Dashboard, navigate to the plugin menu page ie. "LoginPC". and click the "Start Customizing Login Page" Button.
+After activating the plugin, go to your WordPress Dashboard and click on the "LoginPC" menu item. Then click "Start Customizing Login Page" to open the Customizer with your login page preview.
 
-= Who should use the Customizer Login Page Plugin? =
+= Do I need coding skills to use this plugin? =
 
-It is easy to use and can transform your admin login page in minutes. It is designed for all kinds of users from beginner to expert.
+No. Everything is done through visual controls in the WordPress Customizer. You can see all changes in real-time without writing any code.
 
-= Do I need to have coding skills? =
+= Can I use my own logo on the login page? =
 
-No, without any coding knowledge, you can create custom login pages.
+Yes. Go to the Logo section in the Customizer and upload your image. You can also adjust the logo size and add a custom link URL.
 
-= How to reset defaults in the Customizer Login Page? =
+= How do I add a background image? =
 
-In your WordPress Dashboard, navigate to the plugin menu page ie. "LoginPC". and click the "Start Customizing Login Page" Button. Now in the customizer window navigate to Section "Presets" and select "Default" preset and "Press Publish". This will set all customizations to default.  
+In the Customizer, navigate to the Background section. Click "Select Image" to choose an image from your media library. You can also set the image size, position, and repeat options.
 
-= Will changes in the Admin Login Page affect WordPress Security? =
+= Does this plugin work with WordPress Multisite? =
 
-No, the Customizer Login Page does all customization by enhancing WordPress core's predefined functions and within the range of CSS/JS custom allowance by WordPress Restrictions. The plugin never affects any Security or overrides any WordPress restriction. Just gives the flexibility to show real-time changes in the customizer. It is completely safe and reliable to use. 
+Yes. The plugin is compatible with WordPress Multisite installations. You can customize the login page for each site in your network.
 
-= My website is on Wordpress.com and I am logging in to my website by my email how can I customize my login page? =
+= Will my customizations be lost after updating the plugin? =
 
-If your website is configured to use merged login with Wordpress.com, In this case, the website uses the WordPress server's login page to get you to log in to your dashboard instead of the website's wp-login.php. also if you try to log in manually by URL i.e. "http://mywebsite.com/wp-login.php" it will redirect you to the WordPress server's login page. To change this behavior you have to "Disable WordPress.com Log In" and along with it "Set a Password for WP-Admin". Settings related to this are present in your WordPress dashboard in Settings>Security>. For a more detailed explanation of how to do that follow this WordPress tutorial: https://wordpress.com/support/wordpress-com-secure-sign-on-sso/ 
+No. Your settings are stored in the WordPress database and will remain after plugin updates. We recommend using the Export feature to backup your settings periodically.
+
+= How do I reset to default settings? =
+
+Go to the Customizer, navigate to the "Presets" section, select "Default" and click Publish. This will reset all customizations to their original state.
+
+= Can I add a background video instead of an image? =
+
+Background video is available in the Pro version. The free version supports background images and colors.
+
+= How do I import/export my settings? =
+
+The plugin includes Export and Import sections in the Customizer. Export saves your settings as a JSON file. To import, select your previously exported JSON file.
+
+= Is the plugin translation ready? =
+
+Yes. The plugin is fully translation ready and works with popular translation plugins.
+
+= How do I preview my changes before saving? =
+
+All changes appear instantly in the Customizer preview panel. You can see exactly how your login page will look. Changes are only applied when you click Publish.
+
+= My changes are not showing on the login page. What should I do? =
+
+First, clear your browser cache and any caching plugins. Make sure you clicked Publish in the Customizer. If using a CDN, purge the CDN cache as well.
 
 == Changelog ==
 
+= 2.1.4 =
+* Security improvements: sanitized all user inputs
+* Added capability checks for import functionality
+* Improved file upload validation for import feature
+* Fixed deprecated get_page_by_title() for WordPress 6.2+ compatibility
+* Added comprehensive settings sanitization for imports
+* Fixed nonce variable name in settings page
+* Code quality improvements
+
+= 2.1.3 =
+* Tested with WordPress 6.9
+
+= 2.1.2 =
+* Security vulnerability fixed
+
 = 2.1.1 =
-* Additional changes: None
-* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.8.2
+* Added WordPress Multisite support for WordPress 6.8.3
 
 = 2.1.0 =
-* Text domain error fixed.
+* Text domain error fixed
 
 = 2.0.9 =
-* Additional changes: None
-* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.8.1
+* WordPress Multisite compatibility for WordPress 6.8.1
 
 = 2.0.8 =
-* Additional changes: None
-* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.6.2
+* WordPress Multisite compatibility for WordPress 6.6.2
 
 = 2.0.7 =
-* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.6.2
+* Added Multisite support for WordPress 6.6.2
 
 = 2.0.6 =
-* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.6.1
+* Added Multisite support for WordPress 6.6.1
 
 = 2.0.5 =
-* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.5.4
+* Added Multisite support for WordPress 6.5.4
 
-= 2.0.4 Multisite Compatibility for Latest Rebuild =
-* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.4.3
+= 2.0.4 =
+* Added Multisite support for WordPress 6.4.3
 
-= 2.0.2 Multisite Compatibility for Latest Rebuild =
-* Added Capability to run and edit WordPress Multisite Environment Supporting latest WordPress 6.4.2
+= 2.0.2 =
+* Added Multisite support for WordPress 6.4.2
+
+== Upgrade Notice ==
+
+= 2.1.4 =
+Security update with input sanitization, capability checks, and WordPress 6.2+ compatibility. Update recommended.
+
+= 2.1.3 =
+Tested with WordPress 6.9. Update recommended for compatibility.
+
+= 2.1.2 =
+Security update. Please update immediately.

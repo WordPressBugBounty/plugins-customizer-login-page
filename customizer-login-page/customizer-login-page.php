@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin Name: Customizer Login Page
  * Description: customizer Login Page For WordPress.
- * Version: 2.1.1
+ * Version: 2.1.4
  * Author: A WP Life
  * Author URI: https://awplife.com/
  * License: GPLv2 or later
@@ -46,7 +46,10 @@ function oldclp_fire_function() {
 	function customizer_login_page_defaultsettings() {
 
 		$customizer_login_page_settings = get_option( 'customizer_login_page_settings' );
-		add_option( 'customizer_login_page_settings', $_POST );
+		// Only add empty array option if settings don't exist - never use unsanitized POST data.
+		if ( false === $customizer_login_page_settings ) {
+			add_option( 'customizer_login_page_settings', array() );
+		}
 
 	}
 
@@ -63,7 +66,7 @@ function oldclp_fire_function() {
 
 			protected function _constants() {
 				// Plugin Version
-				define( 'AWP_CLP_VER', '2.1.1' );
+				define( 'AWP_CLP_VER', '2.1.4' );
 
 				// Plugin Text Domain
 				define( 'AWP_CPL_TXTDM', 'customizer-login-page' );
@@ -153,3 +156,31 @@ function oldclp_fire_function() {
 		new Customizer_Login_Entities();
 	}
 }
+
+// Secure handler for the "advance build" action
+add_action( 'admin_post_clp_advance_build', 'clp_handle_advance_build' );
+
+function clp_handle_advance_build() {
+    if ( ! current_user_can( 'manage_options' ) ) {
+        wp_die( __( 'You are not allowed to perform this action.', 'customizer-login-page' ), '', array( 'response' => 403 ) );
+    }
+
+    $nonce = isset( $_POST['_wpnonce'] ) ? sanitize_text_field( wp_unslash( $_POST['_wpnonce'] ) ) : '';
+    if ( ! wp_verify_nonce( $nonce, 'clp_advance_build' ) ) {
+        wp_die( __( 'Security check failed.', 'customizer-login-page' ), '', array( 'response' => 403 ) );
+    }
+
+    if ( isset( $_POST['confirm_advance_build'] ) && $_POST['confirm_advance_build'] === 'true' ) {
+        if ( get_option( 'clp_build_package' ) === false ) {
+            add_option( 'clp_build_package', 'newlpc' );
+            delete_option( 'customizer_login_page_settings' );
+        } else {
+            update_option( 'clp_build_package', 'newlpc' );
+            delete_option( 'customizer_login_page_settings' );
+        }
+    }
+
+    // Return JSON for the AJAX caller
+    wp_send_json_success( array( 'message' => 'Advance build completed' ) );
+}
+
