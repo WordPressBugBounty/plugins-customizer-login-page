@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Start : Section Errors Modify */
 $wp_customize->add_section(
 	'lpc-section-errors',

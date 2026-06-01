@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Start Section : Login Outer Form  */
 $wp_customize->add_section(
 	'lpc-section-form',
@@ -220,14 +223,14 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-form',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'solid'  => __( 'Solid' ),
-				'dotted' => __( 'Dotted' ),
-				'dashed' => __( 'Dashed' ),
-				'groove' => __( 'Groove' ),
-				'ridge'  => __( 'Ridge' ),
-				'inset'  => __( 'Inset' ),
-				'outset' => __( 'Outset' ),
-				'none'   => __( 'None' ),
+				'solid'  => __('Solid', 'customizer-login-page'),
+				'dotted' => __('Dotted', 'customizer-login-page'),
+				'dashed' => __('Dashed', 'customizer-login-page'),
+				'groove' => __('Groove', 'customizer-login-page'),
+				'ridge'  => __('Ridge', 'customizer-login-page'),
+				'inset'  => __('Inset', 'customizer-login-page'),
+				'outset' => __('Outset', 'customizer-login-page'),
+				'none'   => __('None', 'customizer-login-page'),
 			),
 		)
 	);
@@ -404,13 +407,13 @@ $wp_customize->add_section(
 				'settings'      => 'lpc_opts[lpc-form-bg-image]',
 				'section'       => 'lpc-section-form',
 				'button_labels' => array( // Optional.
-					'select'       => __( 'Select Image' ),
-					'change'       => __( 'Change Image' ),
-					'remove'       => __( 'Remove' ),
-					'default'      => __( 'Default' ),
-					'placeholder'  => __( 'No image selected' ),
-					'frame_title'  => __( 'Select Image' ),
-					'frame_button' => __( 'Choose Image' ),
+					'select'       => __('Select Image', 'customizer-login-page'),
+					'change'       => __('Change Image', 'customizer-login-page'),
+					'remove'       => __('Remove', 'customizer-login-page'),
+					'default'      => __('Default', 'customizer-login-page'),
+					'placeholder'  => __('No image selected', 'customizer-login-page'),
+					'frame_title'  => __('Select Image', 'customizer-login-page'),
+					'frame_button' => __('Choose Image', 'customizer-login-page'),
 				),
 			)
 		)
@@ -436,12 +439,12 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-form',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'repeat'    => __( 'Repeat' ),
-				'repeat-x'  => __( 'Repeat-x axis' ),
-				'repeat-y'  => __( 'Repeat-y axis' ),
-				'no-repeat' => __( 'No-repeat' ),
-				'initial'   => __( 'Initial' ),
-				'inherit'   => __( 'Inherit' ),
+				'repeat'    => __('Repeat', 'customizer-login-page'),
+				'repeat-x'  => __('Repeat-x axis', 'customizer-login-page'),
+				'repeat-y'  => __('Repeat-y axis', 'customizer-login-page'),
+				'no-repeat' => __('No-repeat', 'customizer-login-page'),
+				'initial'   => __('Initial', 'customizer-login-page'),
+				'inherit'   => __('Inherit', 'customizer-login-page'),
 			),
 		)
 	);
@@ -464,11 +467,11 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-form',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'auto'    => __( 'Auto' ),
-				'cover'   => __( 'Cover' ),
-				'contain' => __( 'Contain' ),
-				'initial' => __( 'Initial' ),
-				'inherit' => __( 'Inherit' ),
+				'auto'    => __('Auto', 'customizer-login-page'),
+				'cover'   => __('Cover', 'customizer-login-page'),
+				'contain' => __('Contain', 'customizer-login-page'),
+				'initial' => __('Initial', 'customizer-login-page'),
+				'inherit' => __('Inherit', 'customizer-login-page'),
 			),
 		)
 	);
@@ -491,15 +494,15 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-form',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'center'        => __( 'Center' ),
-				'center top'    => __( 'Center Top' ),
-				'center bottom' => __( 'Center Bottom' ),
-				'left top'      => __( 'Left Top' ),
-				'left center'   => __( 'Left Center' ),
-				'left bottom'   => __( 'Left Bottom' ),
-				'right top'     => __( 'Right Top' ),
-				'right center'  => __( 'Right Center' ),
-				'right bottom'  => __( 'Right Bottom' ),
+				'center'        => __('Center', 'customizer-login-page'),
+				'center top'    => __('Center Top', 'customizer-login-page'),
+				'center bottom' => __('Center Bottom', 'customizer-login-page'),
+				'left top'      => __('Left Top', 'customizer-login-page'),
+				'left center'   => __('Left Center', 'customizer-login-page'),
+				'left bottom'   => __('Left Bottom', 'customizer-login-page'),
+				'right top'     => __('Right Top', 'customizer-login-page'),
+				'right center'  => __('Right Center', 'customizer-login-page'),
+				'right bottom'  => __('Right Bottom', 'customizer-login-page'),
 			),
 		)
 	);

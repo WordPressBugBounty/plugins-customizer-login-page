@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Start : Section Error Box Styling */
 $wp_customize->add_section(
 	'lpc-section-error-style',
@@ -105,9 +108,9 @@ $wp_customize->add_section(
 				'settings' => 'lpc_opts[lpc-error-style-text-align]',
 				'section'  => 'lpc-section-error-style',
 				'choices'  => array(
-					'left'   => __( 'Left' ),
-					'center' => __( 'Center' ),
-					'right'  => __( 'Right' ),
+					'left'   => __('Left', 'customizer-login-page'),
+					'center' => __('Center', 'customizer-login-page'),
+					'right'  => __('Right', 'customizer-login-page'),
 				),
 			)
 		)

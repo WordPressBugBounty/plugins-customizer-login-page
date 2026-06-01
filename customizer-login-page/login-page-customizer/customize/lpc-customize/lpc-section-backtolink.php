@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Start : Section Back to Link Settings */
 $wp_customize->add_section(
 	'lpc-section-backtolink',
@@ -164,9 +167,9 @@ $wp_customize->add_section(
 				'settings' => 'lpc_opts[lpc-backtolink-text-align]',
 				'section'  => 'lpc-section-backtolink',
 				'choices'  => array( // Optional.
-					'left'   => __( 'Left' ),
-					'center' => __( 'Center' ),
-					'right'  => __( 'Right' ),
+					'left'   => __('Left', 'customizer-login-page'),
+					'center' => __('Center', 'customizer-login-page'),
+					'right'  => __('Right', 'customizer-login-page'),
 				),
 			)
 		)

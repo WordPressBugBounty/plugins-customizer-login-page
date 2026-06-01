@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Customization Home
  *
  * @package loginpc
@@ -34,7 +37,7 @@ class loginpc_Customize {
 		$wp_customize->add_panel(
 			'lpc-main-panel',
 			array(
-				'title'    => __( 'Customizer Login Page ' ),
+				'title'    => __('Customizer Login Page ', 'customizer-login-page'),
 				'priority' => 1,
 			)
 		);

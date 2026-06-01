@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Start : Input Fields */
 $wp_customize->add_section(
 	'lpc-section-form-inputs',
@@ -132,9 +135,9 @@ $wp_customize->add_section(
 				'settings' => 'lpc_opts[lpc-form-inputs-labels-align]',
 				'section'  => 'lpc-section-form-inputs',
 				'choices'  => array( // Optional.
-					'left'   => __( 'Left' ),
-					'center' => __( 'Center' ),
-					'right'  => __( 'Right' ),
+					'left'   => __('Left', 'customizer-login-page'),
+					'center' => __('Center', 'customizer-login-page'),
+					'right'  => __('Right', 'customizer-login-page'),
 				),
 			)
 		)
@@ -177,9 +180,9 @@ $wp_customize->add_section(
 				'settings' => 'lpc_opts[lpc-form-inputs-remember-align]',
 				'section'  => 'lpc-section-form-inputs',
 				'choices'  => array(
-					'left'   => __( 'Left' ), // Required.
-					'center' => __( 'Center' ), // Required.
-					'right'  => __( 'Right' ), // Required.
+					'left'   => __('Left', 'customizer-login-page'), // Required.
+					'center' => __('Center', 'customizer-login-page'), // Required.
+					'right'  => __('Right', 'customizer-login-page'), // Required.
 				),
 			)
 		)

@@ -1,5 +1,8 @@
 <?php
-	/** Start : Section Button Design/Settings */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+/** Start : Section Button Design/Settings */
 	$wp_customize->add_section(
 		'lpc-section-button',
 		array(
@@ -65,9 +68,9 @@
 					'settings' => 'lpc_opts[lpc-form-button-align]',
 					'section'  => 'lpc-section-button',
 					'choices'  => array(
-						'left'   => __( 'Left' ), // Required.
-						'center' => __( 'Center' ), // Required.
-						'right'  => __( 'Right' ), // Required.
+						'left'   => __('Left', 'customizer-login-page'), // Required.
+						'center' => __('Center', 'customizer-login-page'), // Required.
+						'right'  => __('Right', 'customizer-login-page'), // Required.
 					),
 				)
 			)
@@ -523,14 +526,14 @@
 				'section'  => 'lpc-section-button',
 				'type'     => 'select',
 				'choices'  => array( // Optional.
-					'solid'  => __( 'Solid' ),
-					'dotted' => __( 'Dotted' ),
-					'dashed' => __( 'Dashed' ),
-					'groove' => __( 'Groove' ),
-					'ridge'  => __( 'Ridge' ),
-					'inset'  => __( 'Inset' ),
-					'outset' => __( 'Outset' ),
-					'none'   => __( 'None' ),
+					'solid'  => __('Solid', 'customizer-login-page'),
+					'dotted' => __('Dotted', 'customizer-login-page'),
+					'dashed' => __('Dashed', 'customizer-login-page'),
+					'groove' => __('Groove', 'customizer-login-page'),
+					'ridge'  => __('Ridge', 'customizer-login-page'),
+					'inset'  => __('Inset', 'customizer-login-page'),
+					'outset' => __('Outset', 'customizer-login-page'),
+					'none'   => __('None', 'customizer-login-page'),
 				),
 			)
 		);

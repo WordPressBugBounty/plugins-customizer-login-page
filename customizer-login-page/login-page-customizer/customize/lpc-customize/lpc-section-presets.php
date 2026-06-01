@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Section : Presets  */
 		$wp_customize->add_section(
 			'lpc-section-presets',
@@ -30,79 +33,79 @@
 			$lpc_presets_choices = array(
 				'default'    => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/default_thumb.jpg',
-					'name'  => __( 'Default' ),
+					'name'  => __('Default', 'customizer-login-page'),
 				),
 				'gradient'   => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/gradient_thumb.jpg',
-					'name'  => __( 'Gradient' ),
+					'name'  => __('Gradient', 'customizer-login-page'),
 				),
 				'chirp'      => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/chirp_thumb.jpg',
-					'name'  => __( 'Chirp' ),
+					'name'  => __('Chirp', 'customizer-login-page'),
 				),
 				'education'  => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/education_thumb.jpg',
-					'name'  => __( 'Education' ),
+					'name'  => __('Education', 'customizer-login-page'),
 				),
 				'circle'     => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/circle_thumb.jpg',
-					'name'  => __( 'Circle' ),
+					'name'  => __('Circle', 'customizer-login-page'),
 				),
 				'portal'     => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/portal_thumb.jpg',
-					'name'  => __( 'Portal' ),
+					'name'  => __('Portal', 'customizer-login-page'),
 				),
 				'colorful'   => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/colorful_thumb.jpg',
-					'name'  => __( 'Colorful' ),
+					'name'  => __('Colorful', 'customizer-login-page'),
 				),
 				'crystal'    => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/crystal_thumb.jpg',
-					'name'  => __( 'Crystal' ),
+					'name'  => __('Crystal', 'customizer-login-page'),
 				),
 				'secure'     => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/secure_thumb.jpg',
-					'name'  => __( 'Secure' ),
+					'name'  => __('Secure', 'customizer-login-page'),
 				),
 				'invite'     => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/invite_thumb.jpg',
-					'name'  => __( 'Invite' ),
+					'name'  => __('Invite', 'customizer-login-page'),
 				),
 				'crypto'     => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/crypto_thumb.jpg',
-					'name'  => __( 'Crypto' ),
+					'name'  => __('Crypto', 'customizer-login-page'),
 				),
 				'darkaqua'   => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/darkaqua_thumb.jpg',
-					'name'  => __( 'Darkaqua' ),
+					'name'  => __('Darkaqua', 'customizer-login-page'),
 				),
 				'celebrate'  => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/celebrate_thumb.jpg',
-					'name'  => __( 'Celebrate' ),
+					'name'  => __('Celebrate', 'customizer-login-page'),
 				),
 				'anime'      => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/anime_thumb.jpg',
-					'name'  => __( 'Anime' ),
+					'name'  => __('Anime', 'customizer-login-page'),
 				),
 				'medical'    => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/medical_thumb.jpg',
-					'name'  => __( 'Medical' ),
+					'name'  => __('Medical', 'customizer-login-page'),
 				),
 				'lock'       => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/lock_thumb.jpg',
-					'name'  => __( 'Lock' ),
+					'name'  => __('Lock', 'customizer-login-page'),
 				),
 				'gaming'     => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/gaming_thumb.jpg',
-					'name'  => __( 'Gaming' ),
+					'name'  => __('Gaming', 'customizer-login-page'),
 				),
 				'naturetech' => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/naturetech_thumb.jpg',
-					'name'  => __( 'Naturetech' ),
+					'name'  => __('Naturetech', 'customizer-login-page'),
 				),
 				'park' => array(
 					'image' => LOGINPC_PLUGIN_URL . 'assets/presets/images/park_thumb.jpg',
-					'name'  => __( 'Park' ),
+					'name'  => __('Park', 'customizer-login-page'),
 				),
 			);
 
@@ -110,10 +113,10 @@
 			uasort(
 				$lpc_presets_choices,
 				function( $a, $b ) {
-					if ( $a['name'] === __( 'Default' ) ) {
+					if ( $a['name'] === __('Default', 'customizer-login-page') ) {
 						return -1;
 					}
-					if ( $b['name'] === __( 'Default' ) ) {
+					if ( $b['name'] === __('Default', 'customizer-login-page') ) {
 						return 1;
 					}
 					return strcmp( $a['name'], $b['name'] );

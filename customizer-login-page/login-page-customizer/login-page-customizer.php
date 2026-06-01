@@ -2,7 +2,7 @@
 /*
  * Plugin Name:     Customizer Login Page
  * Description: 	Easily customize your "WordPress login page" with our intuitive tool which enhances WordPress customizer with editability of WordPress login Page. Personalize colors, designs, and logos to match your style, and enhance user experience with customizable forms and buttons. Make WordPress login page uniquely yours.
- * Version: 		2.1.4
+ * Version: 		2.1.5
  * Author: 			farazfrank
  * Author URI: 		https://awplife.com/
  * License: 		GPL-2.0+

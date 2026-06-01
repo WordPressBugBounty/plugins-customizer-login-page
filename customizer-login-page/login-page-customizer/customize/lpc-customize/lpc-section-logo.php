@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Section : Logo Start. */
 $wp_customize->add_section(
 	'lpc-section-logo',
@@ -69,13 +72,13 @@ $wp_customize->add_control(
 			'settings'      => 'lpc_opts[lpc-logo-image]',
 			'section'       => 'lpc-section-logo',
 			'button_labels' => array( // Optional.
-				'select'       => __( 'Select Image' ),
-				'change'       => __( 'Change Image' ),
-				'remove'       => __( 'Remove' ),
-				'default'      => __( 'Default' ),
-				'placeholder'  => __( 'No image selected' ),
-				'frame_title'  => __( 'Select Image' ),
-				'frame_button' => __( 'Choose Image' ),
+				'select'       => __('Select Image', 'customizer-login-page'),
+				'change'       => __('Change Image', 'customizer-login-page'),
+				'remove'       => __('Remove', 'customizer-login-page'),
+				'default'      => __('Default', 'customizer-login-page'),
+				'placeholder'  => __('No image selected', 'customizer-login-page'),
+				'frame_title'  => __('Select Image', 'customizer-login-page'),
+				'frame_button' => __('Choose Image', 'customizer-login-page'),
 			),
 			'input_attrs'   => array(
 				'onclick' => 'event.preventDefault();',

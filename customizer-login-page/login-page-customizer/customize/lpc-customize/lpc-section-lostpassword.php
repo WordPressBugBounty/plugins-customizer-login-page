@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Start : Section Lost PassWord Settings */
 $wp_customize->add_section(
 	'lpc-section-lostpass',
@@ -184,9 +187,9 @@ $wp_customize->add_section(
 				'settings' => 'lpc_opts[lpc-form-lostpass-text-align]',
 				'section'  => 'lpc-section-lostpass',
 				'choices'  => array( // Optional.
-					'left'   => __( 'Left' ),
-					'center' => __( 'Center' ),
-					'right'  => __( 'Right' ),
+					'left'   => __('Left', 'customizer-login-page'),
+					'center' => __('Center', 'customizer-login-page'),
+					'right'  => __('Right', 'customizer-login-page'),
 				),
 			)
 		)
@@ -304,9 +307,9 @@ $wp_customize->add_section(
 				'settings' => 'lpc_opts[lpc-form-lostpass-label-align]',
 				'section'  => 'lpc-section-lostpass',
 				'choices'  => array( // Optional.
-					'left'   => __( 'Left' ),
-					'center' => __( 'Center' ),
-					'right'  => __( 'Right' ),
+					'left'   => __('Left', 'customizer-login-page'),
+					'center' => __('Center', 'customizer-login-page'),
+					'right'  => __('Right', 'customizer-login-page'),
 				),
 			)
 		)

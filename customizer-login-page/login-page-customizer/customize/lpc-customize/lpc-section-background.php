@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Section : Login Background  */
 $wp_customize->add_section(
 	'lpc-section-background',
@@ -46,8 +49,8 @@ $wp_customize->add_section(
 				'settings' => 'lpc_opts[lpc-background-color-choice]',
 				'section'  => 'lpc-section-background',
 				'choices'  => array(
-					'solid'    => __( 'Solid Color' ),
-					'gradient' => __( 'Gradient Color' ),
+					'solid'    => __('Solid Color', 'customizer-login-page'),
+					'gradient' => __('Gradient Color', 'customizer-login-page'),
 				),
 			)
 		)
@@ -305,13 +308,13 @@ $wp_customize->add_section(
 				'settings'      => 'lpc_opts[lpc-background-image]',
 				'section'       => 'lpc-section-background',
 				'button_labels' => array( // Optional.
-					'select'       => __( 'Select Image' ),
-					'change'       => __( 'Change Image' ),
-					'remove'       => __( 'Remove' ),
-					'default'      => __( 'Default' ),
-					'placeholder'  => __( 'No image selected' ),
-					'frame_title'  => __( 'Select Image' ),
-					'frame_button' => __( 'Choose Image' ),
+					'select'       => __('Select Image', 'customizer-login-page'),
+					'change'       => __('Change Image', 'customizer-login-page'),
+					'remove'       => __('Remove', 'customizer-login-page'),
+					'default'      => __('Default', 'customizer-login-page'),
+					'placeholder'  => __('No image selected', 'customizer-login-page'),
+					'frame_title'  => __('Select Image', 'customizer-login-page'),
+					'frame_button' => __('Choose Image', 'customizer-login-page'),
 				),
 				'input_attrs'   => array(
 					'onclick' => 'event.preventDefault();',
@@ -340,12 +343,12 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-background',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'repeat'    => __( 'Repeat' ),
-				'repeat-x'  => __( 'Repeat-x axis' ),
-				'repeat-y'  => __( 'Repeat-y axis' ),
-				'no-repeat' => __( 'No-repeat' ),
-				'initial'   => __( 'Initial' ),
-				'inherit'   => __( 'Inherit' ),
+				'repeat'    => __('Repeat', 'customizer-login-page'),
+				'repeat-x'  => __('Repeat-x axis', 'customizer-login-page'),
+				'repeat-y'  => __('Repeat-y axis', 'customizer-login-page'),
+				'no-repeat' => __('No-repeat', 'customizer-login-page'),
+				'initial'   => __('Initial', 'customizer-login-page'),
+				'inherit'   => __('Inherit', 'customizer-login-page'),
 			),
 		)
 	);
@@ -368,11 +371,11 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-background',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'auto'    => __( 'Auto' ),
-				'cover'   => __( 'Cover' ),
-				'contain' => __( 'Contain' ),
-				'initial' => __( 'Initial' ),
-				'inherit' => __( 'Inherit' ),
+				'auto'    => __('Auto', 'customizer-login-page'),
+				'cover'   => __('Cover', 'customizer-login-page'),
+				'contain' => __('Contain', 'customizer-login-page'),
+				'initial' => __('Initial', 'customizer-login-page'),
+				'inherit' => __('Inherit', 'customizer-login-page'),
 			),
 		)
 	);
@@ -395,15 +398,15 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-background',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'center'        => __( 'Center' ),
-				'center top'    => __( 'Center Top' ),
-				'center bottom' => __( 'Center Bottom' ),
-				'left top'      => __( 'Left Top' ),
-				'left center'   => __( 'Left Center' ),
-				'left bottom'   => __( 'Left Bottom' ),
-				'right top'     => __( 'Right Top' ),
-				'right center'  => __( 'Right Center' ),
-				'right bottom'  => __( 'Right Bottom' ),
+				'center'        => __('Center', 'customizer-login-page'),
+				'center top'    => __('Center Top', 'customizer-login-page'),
+				'center bottom' => __('Center Bottom', 'customizer-login-page'),
+				'left top'      => __('Left Top', 'customizer-login-page'),
+				'left center'   => __('Left Center', 'customizer-login-page'),
+				'left bottom'   => __('Left Bottom', 'customizer-login-page'),
+				'right top'     => __('Right Top', 'customizer-login-page'),
+				'right center'  => __('Right Center', 'customizer-login-page'),
+				'right bottom'  => __('Right Bottom', 'customizer-login-page'),
 			),
 		)
 	);
@@ -470,13 +473,13 @@ $wp_customize->add_section(
 				'section'       => 'lpc-section-background',
 				'mime_type'     => 'video',  // Required. Can be image, audio, video, application, text.
 				'button_labels' => array( // Optional.
-					'select'       => __( 'Select File' ),
-					'change'       => __( 'Change File' ),
-					'default'      => __( 'Default' ),
-					'remove'       => __( 'Remove' ),
-					'placeholder'  => __( 'No file selected' ),
-					'frame_title'  => __( 'Select File' ),
-					'frame_button' => __( 'Choose File' ),
+					'select'       => __('Select File', 'customizer-login-page'),
+					'change'       => __('Change File', 'customizer-login-page'),
+					'default'      => __('Default', 'customizer-login-page'),
+					'remove'       => __('Remove', 'customizer-login-page'),
+					'placeholder'  => __('No file selected', 'customizer-login-page'),
+					'frame_title'  => __('Select File', 'customizer-login-page'),
+					'frame_button' => __('Choose File', 'customizer-login-page'),
 				),
 			)
 		)
@@ -540,11 +543,11 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-background',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'fill'       => __( 'Fill' ),
-				'cover'      => __( 'Cover' ),
-				'contain'    => __( 'Contain' ),
-				'scale-down' => __( 'Scale-Down' ),
-				'none'       => __( 'None' ),
+				'fill'       => __('Fill', 'customizer-login-page'),
+				'cover'      => __('Cover', 'customizer-login-page'),
+				'contain'    => __('Contain', 'customizer-login-page'),
+				'scale-down' => __('Scale-Down', 'customizer-login-page'),
+				'none'       => __('None', 'customizer-login-page'),
 			),
 		)
 	);

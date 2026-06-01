@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Section : Footer. */
 $wp_customize->add_section(
 	'lpc-section-footer',
@@ -297,8 +300,8 @@ $wp_customize->add_control(
 			'settings' => 'lpc_opts[lpc-poweredby-position]',
 			'section'  => 'lpc-section-footer',
 			'choices'  => array(
-				'left'  => __( 'Left' ),
-				'right' => __( 'Right' ),
+				'left'  => __('Left', 'customizer-login-page'),
+				'right' => __('Right', 'customizer-login-page'),
 			),
 		)
 	)

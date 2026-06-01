@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Start : Section Message Box Styling */
 $wp_customize->add_section(
 	'lpc-section-msg-style',
@@ -106,9 +109,9 @@ $wp_customize->add_section(
 				'settings' => 'lpc_opts[lpc-msg-style-text-align]',
 				'section'  => 'lpc-section-msg-style',
 				'choices'  => array( // Optional.
-					'left'   => __( 'Left' ),
-					'center' => __( 'Center' ),
-					'right'  => __( 'Right' ),
+					'left'   => __('Left', 'customizer-login-page'),
+					'center' => __('Center', 'customizer-login-page'),
+					'right'  => __('Right', 'customizer-login-page'),
 				),
 			)
 		)

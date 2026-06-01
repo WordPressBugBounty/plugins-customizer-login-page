@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Start : Login Inner Form */
 $wp_customize->add_section(
 	'lpc-section-inner-form',
@@ -347,14 +350,14 @@ $wp_customize->add_section(
 			'section'  => 'lpc-section-inner-form',
 			'type'     => 'select',
 			'choices'  => array( // Optional.
-				'solid'  => __( 'Solid' ),
-				'dotted' => __( 'Dotted' ),
-				'dashed' => __( 'Dashed' ),
-				'groove' => __( 'Groove' ),
-				'ridge'  => __( 'Ridge' ),
-				'inset'  => __( 'Inset' ),
-				'outset' => __( 'Outset' ),
-				'none'   => __( 'None' ),
+				'solid'  => __('Solid', 'customizer-login-page'),
+				'dotted' => __('Dotted', 'customizer-login-page'),
+				'dashed' => __('Dashed', 'customizer-login-page'),
+				'groove' => __('Groove', 'customizer-login-page'),
+				'ridge'  => __('Ridge', 'customizer-login-page'),
+				'inset'  => __('Inset', 'customizer-login-page'),
+				'outset' => __('Outset', 'customizer-login-page'),
+				'none'   => __('None', 'customizer-login-page'),
 			),
 		)
 	);
@@ -531,13 +534,13 @@ $wp_customize->add_section(
 				'settings'      => 'lpc_opts[lpc-inner-form-bg-image]',
 				'section'       => 'lpc-section-inner-form',
 				'button_labels' => array( // Optional.
-					'select'       => __( 'Select Image' ),
-					'change'       => __( 'Change Image' ),
-					'remove'       => __( 'Remove' ),
-					'default'      => __( 'Default' ),
-					'placeholder'  => __( 'No image selected' ),
-					'frame_title'  => __( 'Select Image' ),
-					'frame_button' => __( 'Choose Image' ),
+					'select'       => __('Select Image', 'customizer-login-page'),
+					'change'       => __('Change Image', 'customizer-login-page'),
+					'remove'       => __('Remove', 'customizer-login-page'),
+					'default'      => __('Default', 'customizer-login-page'),
+					'placeholder'  => __('No image selected', 'customizer-login-page'),
+					'frame_title'  => __('Select Image', 'customizer-login-page'),
+					'frame_button' => __('Choose Image', 'customizer-login-page'),
 				),
 			)
 		)

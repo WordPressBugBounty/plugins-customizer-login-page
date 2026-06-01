@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /*
  * Template Name: Customizer Login Page Template
  * Description: A custom login page template that mimics the WordPress login page.
@@ -24,9 +27,6 @@ if ( ! is_customize_preview() ) {
 
 	wp_safe_redirect( $lpc_redirect_url );
 }
-
-	/** Make sure that the WordPress bootstrap has run before continuing. */
-	require( ABSPATH . '/wp-load.php' );
 
 	// Redirect to https login if forced to use SSL
 	if ( force_ssl_admin() && ! is_ssl() ) {
@@ -61,7 +61,7 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 	$login_title = get_bloginfo( 'name', 'display' );
 
 	/* translators: Login screen title. 1: Login screen name, 2: Network or site name */
-	$login_title = sprintf( __( '%1$s &lsaquo; %2$s &#8212; WordPress' ), $title, $login_title );
+	$login_title = sprintf( __('%1$s &lsaquo; %2$s &#8212; WordPress', 'customizer-login-page'), $title, $login_title );
 
 	/**
 	* Filters the title tag content for login page.
@@ -139,8 +139,8 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 		$login_header_url   = network_home_url();
 		$login_header_title = get_network()->site_name;
 	} else {
-		$login_header_url   = __( 'https://wordpress.org/' );
-		$login_header_title = __( 'Powered by WordPress' );
+		$login_header_url   = __('https://wordpress.org/', 'customizer-login-page');
+		$login_header_title = __('Powered by WordPress', 'customizer-login-page');
 	}
 
 	/**
@@ -294,7 +294,7 @@ if (
 
 				<label for="language-switcher-locales">
 					<span class="dashicons dashicons-translation" aria-hidden="true"></span>
-					<span class="screen-reader-text"><?php _e( 'Language' ); ?></span>
+					<span class="screen-reader-text"><?php _e('Language', 'customizer-login-page'); ?></span>
 				</label>
 
 				<?php
@@ -429,7 +429,7 @@ switch ($action) {
 		*/
 		do_action( 'lost_password' );
 
-		login_header(__('Lost Password'), '<p class="message">' . __('Please enter your username or email address. You will receive a link to create a new password via email.') . '</p>', $errors);
+		login_header(__('Lost Password', 'customizer-login-page'), '<p class="message">' . __('Please enter your username or email address. You will receive a link to create a new password via email.', 'customizer-login-page') . '</p>', $errors);
 
 		$user_login = '';
 
@@ -441,7 +441,7 @@ switch ($action) {
 
 		<form name="lostpasswordform" id="lostpasswordform" action="<?php echo esc_url( network_site_url( 'wp-login.php?action=lostpassword', 'login_post' ) ); ?>" method="post">
 			<p>
-				<label for="user_login" ><span><?php _e( 'Username or Email Address' ); ?></span><br />
+				<label for="user_login" ><span><?php _e('Username or Email Address', 'customizer-login-page'); ?></span><br />
 				<input type="text" name="user_login" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
 			</p>
 			<?php
@@ -456,10 +456,10 @@ switch ($action) {
 		</form>
 
 		<p id="nav">
-			<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e('Log in') ?></a>
+			<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e('Log in', 'customizer-login-page') ?></a>
 			<?php
 			if ( get_option( 'users_can_register' ) ) :
-				$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __( 'Register' ) );
+				$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __('Register', 'customizer-login-page') );
 
 				echo esc_html( $login_link_separator );
 
@@ -524,15 +524,15 @@ switch ($action) {
 		* @param string $registration_redirect The redirect destination URL.
 		*/
 		$redirect_to = apply_filters( 'registration_redirect', $registration_redirect );
-		login_header(__('Registration Form'), '<p class="message register">' . __('Register For This Site') . '</p>', $errors);
+		login_header(__('Registration Form', 'customizer-login-page'), '<p class="message register">' . __('Register For This Site', 'customizer-login-page') . '</p>', $errors);
 		?>
 		<form name="registerform" id="registerform" action="<?php echo esc_url( site_url( 'wp-login.php?action=register', 'login_post' ) ); ?>" method="post" novalidate="novalidate">
 			<p>
-				<label for="user_login"><?php _e('Username') ?><br />
+				<label for="user_login"><?php _e('Username', 'customizer-login-page') ?><br />
 				<input type="text" name="user_login" id="user_login" class="input" value="<?php echo esc_attr(wp_unslash($user_login)); ?>" size="20" /></label>
 			</p>
 			<p>
-				<label for="user_email"><?php _e('Email') ?><br />
+				<label for="user_email"><?php _e('Email', 'customizer-login-page') ?><br />
 				<input type="email" name="user_email" id="user_email" class="input" value="<?php echo esc_attr( wp_unslash( $user_email ) ); ?>" size="25" /></label>
 			</p>
 			<?php
@@ -543,7 +543,7 @@ switch ($action) {
 			*/
 			do_action( 'register_form' );
 			?>
-			<p id="reg_passmail"><?php _e( 'Registration confirmation will be emailed to you.' ); ?></p>
+			<p id="reg_passmail"><?php _e('Registration confirmation will be emailed to you.', 'customizer-login-page'); ?></p>
 			<br class="clear" />
 			<input type="hidden" name="redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>" />
 			<p class="submit">
@@ -552,9 +552,9 @@ switch ($action) {
 		</form>
 
 		<p id="nav">
-			<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e( 'Log in' ); ?></a>
+			<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e('Log in', 'customizer-login-page'); ?></a>
 			<?php echo esc_html( $login_link_separator ); ?>
-			<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?' ); ?></a>
+			<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e('Lost your password?', 'customizer-login-page'); ?></a>
 		</p>
 
 		<?php
@@ -569,17 +569,17 @@ switch ($action) {
 		if ( $customize_login )
 			wp_enqueue_script( 'customize-base' );
 
-		login_header(__('Log In'), '', $errors);
+		login_header(__('Log In', 'customizer-login-page'), '', $errors);
 		$aria_describedby_error = '';
 		?>
 
 		<form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post" autocomplete="off">
 			<p>
-				<label for="user_login"><span><?php _e( 'Username or Email Address' ); ?></span><br />
+				<label for="user_login"><span><?php _e('Username or Email Address', 'customizer-login-page'); ?></span><br />
 				<input type="text" name="log" id="user_login"<?php echo $aria_describedby_error; ?> class="input" value="<?php echo esc_attr( $user_login ); ?>" size="20"  autocomplete="off"/></label>
 			</p>
 			<p>
-				<label for="user_pass"><span><?php _e( 'Password' ); ?></span><br />
+				<label for="user_pass"><span><?php _e('Password', 'customizer-login-page'); ?></span><br />
 				<input type="password" name="pwd" id="user_pass"<?php echo $aria_describedby_error; ?> class="input" value="" size="20"  autocomplete="off"/></label>
 			</p>
 			<?php
@@ -607,7 +607,7 @@ switch ($action) {
 			<p id="nav">
 				<?php if ( ! isset( $_GET['checkemail'] ) || ! in_array( $_GET['checkemail'], array( 'confirm', 'newpass' ) ) ) :
 					if ( get_option( 'users_can_register' ) ) :
-						$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __( 'Register' ) );
+						$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __('Register', 'customizer-login-page') );
 
 						/** This filter is documented in wp-includes/general-template.php */
 						echo apply_filters( 'register', $registration_url );
@@ -615,7 +615,7 @@ switch ($action) {
 						echo esc_html( $login_link_separator );
 					endif;
 					?>
-					<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e( 'Lost your password?' ); ?></a>
+					<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php _e('Lost your password?', 'customizer-login-page'); ?></a>
 				<?php endif; ?>
 			</p>
 		<?php }

@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 /** Section : Login page Title  */
 		$wp_customize->add_section(
 			'lpc-section-title',
